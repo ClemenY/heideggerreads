@@ -96,31 +96,31 @@ QUOTE = ["Tell me how you read and I'll tell you who you are",
 #!/usr/bin/env ruby
 
 client = Twitter::REST::Client.new do |config|
-config.consumer_key        = "ADLsdzFfr6aEHJAAiSFnmHhgb"
-config.consumer_secret     = "H2jxcxxrQqiUYFhXMvzQuxfaROI4m3up6kG1CLvcd7f8rkW4aV"
-config.access_token        = "915275729478266881-m6uwyTGhuNQLeO2VEMLEZxOFQCiQuQG"
-config.access_token_secret = "LPSgx0m7pOkBwGOe54IJqBiiYBZ7UTxRm0ZTs5NOuJkAU"
+config.consumer_key        = "0yC1gdUh0KYA661SRe4gGuscc"
+config.consumer_secret     = "Az0MDINMeMsd6ioioGW23NgBdsRD7wyTmv3fo3Y6AxYY8q26u3"
+config.access_token        = "915275729478266881-VLaEoVYVnYRDQZXkxw7ebC790SnSD7X"
+config.access_token_secret = "7LxJJmRbYLeBdXM9QgFDNsByH21d236eLHncTNJwp80T2"
 end
 
 
 #search tweets around cmu campus mention German related topics
-search_options = {result_type: "recent",geocode: "40.4434119,-79.9429875,10mi"}
-client.search("#Berlin", search_options).take(1).each do |tweet|
- puts "#{tweet.user.screen_name}: #{tweet.text}"
-  client.update(QUOTE.sample+": "+NEWS.sample+". " + "@#{tweet.user.screen_name}")
-end
+#search_options = {result_type: "recent",geocode: "40.4434119,-79.9429875,10mi"}
+#client.search("#Berlin", search_options).take(1).each do |tweet|
+ #puts "#{tweet.user.screen_name}: #{tweet.text}"
+  #client.update(QUOTE.sample+": "+NEWS.sample+". " + "@#{tweet.user.screen_name}")
+  #end
 
 
-search_options = {result_type: "recent", geocode: "40.4434119,-79.9429875,10mi"}
-client.search("#Hamburg", search_options).take(1).each do |tweet|
- puts "#{tweet.user.screen_name}: #{tweet.text}"
-  client.update(QUOTE.sample+": "+NEWS.sample+". " + "@#{tweet.user.screen_name}")
-end
+#search_options = {result_type: "recent", geocode: "40.4434119,-79.9429875,10mi"}
+#client.search("#Hamburg", search_options).take(1).each do |tweet|
+ #puts "#{tweet.user.screen_name}: #{tweet.text}"
+  #client.update(QUOTE.sample+": "+NEWS.sample+". " + "@#{tweet.user.screen_name}")
+  #end
 
-search_options = {result_type: "recent", geocode: "40.4434119,-79.9429875,10mi"}
-client.search("#Germany", search_options).take(1).each do |tweet|
- puts "#{tweet.user.screen_name}: #{tweet.text}"
-  client.update(QUOTE.sample+": "+NEWS.sample+". " + "@#{tweet.user.screen_name}")
-end
+#search_options = {result_type: "recent", geocode: "40.4434119,-79.9429875,10mi"}
+#client.search("#Germany", search_options).take(1).each do |tweet|
+ #puts "#{tweet.user.screen_name}: #{tweet.text}"
+  #client.update(QUOTE.sample+": "+NEWS.sample+". " + "@#{tweet.user.screen_name}")
+  #end
 
-#client.update (QUOTE.sample+": "+NEWS.sample+". ")
+client.update (QUOTE.sample+": "+NEWS.sample+". ")
