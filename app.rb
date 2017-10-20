@@ -69,7 +69,7 @@ QUOTE = ["Tell me how you read and I'll tell you who you are",
   "Everyone is the other and no one is himself",
   "Longing is the agony of the nearness of the distant",
   "The possible ranks higher than the actual",
-  "truth is that which makes a people certain, clear, and strong",
+  "Truth is that which makes a people certain, clear, and strong",
   "He who thinks great thoughts often makes great errors",
   "The human being is not the lord of beings, but the shepherd of being",
   "Das Nichts nichtet",
@@ -90,7 +90,18 @@ QUOTE = ["Tell me how you read and I'll tell you who you are",
   "Let himself be drawn hither by the coercion of the phenomena themselves",
   "The essence of technology is by no means anything technological",
   "What is decision anyway",
-  "The poets are in the vanguard of a changed conception of Being"]
+  "The poets are in the vanguard of a changed conception of Being",
+  "Transcendence constitutes selfhood",
+  "In its essence, technology is something that man does not control",
+  "The grandeur of man is measured according to what he seeks and according to the urgency by which he remains a seeker",
+  "The human body is essentially something other than an animal organism",
+  "The most thought-provoking thing in our thought-provoking time is that we are still not thinking",
+  "Everywhere we remain unfree and chained to technology, whether we passionately affirm or deny it",
+  "We ourselves are the entities to be analyzed",
+  "In order to remain silent Da-sein must have something to say",
+  "In everything well known something worthy of thought still lurks.",
+  "Enjoyment of the work consists in participation in the creative state of the artist",
+  "The word 'art' does not designate the concept of a mere eventuality; it is a concept of ran"]
   
 
 #!/usr/bin/env ruby
