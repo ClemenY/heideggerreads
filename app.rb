@@ -103,7 +103,7 @@ config.access_token_secret = "LPSgx0m7pOkBwGOe54IJqBiiYBZ7UTxRm0ZTs5NOuJkAU"
 end
 
 
-search tweets around cmu campus mention German related topics
+#search tweets around cmu campus mention German related topics
 search_options = {result_type: "recent",geocode: "40.4434119,-79.9429875,10mi"}
 client.search("#Berlin", search_options).take(1).each do |tweet|
  puts "#{tweet.user.screen_name}: #{tweet.text}"
